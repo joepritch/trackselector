@@ -54,7 +54,7 @@ $(document).ready(function()  {
 });
 
 function calcTotals(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t)  {
-  var a1Total = 0;
+  var a1Total = 1;
   if (a === 1)  {
     var a1Total = a1Total + 1;
   } else {
@@ -80,7 +80,7 @@ function calcTotals(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) 
   } else {
     var a1Total = a1Total + 0;
   }
-  var a2Total = 0;
+  var a2Total = 1;
   if (f === 1)  {
     var a2Total = a2Total + 1;
   } else {
@@ -106,7 +106,7 @@ function calcTotals(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) 
   } else {
     var a2Total = a2Total + 0;
   }
-  var a3Total = 0;
+  var a3Total = 1;
   if (k === 1)  {
     var a3Total = a3Total + 1;
   } else {
@@ -132,7 +132,7 @@ function calcTotals(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) 
   } else {
     var a3Total = a3Total + 0;
   }
-  var a4Total = 0;
+  var a4Total = 1;
   if (p === 1)  {
     var a4Total = a4Total + 1;
   } else {
@@ -170,11 +170,30 @@ function tallyResults(a1, a2, a3, a4) {
     $(".cLang").show();
   } else if (a4 > a1 && a2 && a3) {
     $(".dLang").show();
-  } else tieBreaker()
+  } else tieBreaker(a1, a2, a3, a4)
 }
 
 function tieBreaker(a1, a2, a3, a4){
-  if (a1===a2)  {
-    $()
+  $(".tieBreakerQuestion").show();
+  if (a1 === a2) {
+    $("#tba1").show();
+    $("#tba2").show();
+  } else if (a1 === a3) {
+    $("#tba1").show();
+    $("#tba3").show();
+  } else if (a1 === a4) {
+    $("tba1").show();
+    $("tba4").show();
+  } else if (a2 === a3) {
+    $("#tba2").show();
+    $("#tba3").show();
+  } else if (a2 === a4) {
+    $("#tba2").show();
+    $("tba4").show();
+  } else if (a3 === a4) {
+    $("#tba3").show();
+    $("tba4").show();
+  } else {
+    alert("the code didn't work!")
   }
 }
