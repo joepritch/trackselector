@@ -11,129 +11,165 @@
     <div class="header">
       <img src="img/epiclogo.png" alt="" height=100%>
     </div>
-    <div class="namePopup">
-      <div class="well">
-        <h2>What is your name?</h2>
-        <input type="text" name="userName" value="">
-        <button class="btn" type="button" name="button">Submit</button>
+    <!-- <div class="row">
+      <div class="col-md-4">
+
       </div>
-    </div>
+      <div class="col-md-4">
+        <div class="namePopup">
+          <div class="well">
+            <form id="getUserName">
+              <h2>What is your name?</h2>
+              <input id="inputName" type="text" name="userName" value=""><br>
+              <button id="nameButton" class="btn" type="submit" name="button">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+
+      </div>
+    </div> -->
     <div class="container">
       <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-1">
 
         </div>
-        <div class="col-md-8">
-          <h3>Find out which track is right for you</h3>
-          <p><span class="userName"></span>, curious which language is the best for for you? Try one of these and find out. Keep in mind that blah blah growth mindset.</p>
-          <button class="btn" type="button" name="button">Multiple Choice</button>
-          <button class="btn" type="button" name="button">Branching Elimination</button>
+        <div class="col-md-10">
+          <div class="mainContent">
+            <h3>Find out which track is right for you</h3>
+            <p><span class="userName"></span>Curious which language is the best for for you? Try one of these and find out. Keep in mind that blah blah growth mindset.</p>
+            <button id="showMult" class="btn" type="button" name="button">Multiple Choice</button>
+            <button id="showElim" class="btn" type="button" name="button">Branching Elimination</button>
+          </div>
           <div class="mult">
             <form id="multQuiz">
               <div id="multQ1">
                 <h3>Question 1</h3>
                 <label>
-                  <input type="radio" name="multA1" value="a">
+                  <input id="q1a1" type="radio" name="q1" value="1">
                   a
                 </label><br>
                 <label>
-                  <input type="radio" name="multA1" value="b">
+                  <input type="radio" name="q1" value="1">
                   b
                 </label><br>
                 <label>
-                  <input type="radio" name="multA1" value="c">
+                  <input type="radio" name="q1" value="1">
                   c
                 </label><br>
                 <label>
-                  <input type="radio" name="multA1" value="d">
+                  <input type="radio" name="q1" value="1">
                   d
                 </label><br>
+                <button class="btn" type="button" name="button">Next</button>
               </div>
               <div id="multQ2">
                 <h3>Question 2</h3>
                 <label>
-                  <input type="radio" name="multA2" value="a">
+                  <input id="q2a1" type="radio" name="q2a1" value="1">
                   a
                 </label><br>
                 <label>
-                  <input type="radio" name="multA2" value="b">
+                  <input type="radio" name="q2a2" value="1">
                   b
                 </label><br>
                 <label>
-                  <input type="radio" name="multA2" value="c">
+                  <input type="radio" name="q2a3" value="1">
                   c
                 </label><br>
                 <label>
-                  <input type="radio" name="multA2" value="d">
+                  <input type="radio" name="q2a4" value="1">
                   d
                 </label><br>
+                <button class="btn" type="button" name="button">Next</button>
               </div>
               <div id="multQ3">
                 <h3>Question 3</h3>
                 <label>
-                  <input type="radio" name="multA3" value="a">
+                  <input id="q3a1" type="radio" name="q3a1" value="1">
                   a
                 </label><br>
                 <label>
-                  <input type="radio" name="multA3" value="b">
+                  <input type="radio" name="q3a2" value="1">
                   b
                 </label><br>
                 <label>
-                  <input type="radio" name="multA3" value="c">
+                  <input type="radio" name="q3a3" value="1">
                   c
                 </label><br>
                 <label>
-                  <input type="radio" name="multA3" value="d">
+                  <input type="radio" name="q3a4" value="1">
                   d
                 </label><br>
+                <button class="btn" type="button" name="button">Next</button>
               </div>
               <div id="multQ4">
                 <h3>Question 4</h3>
                 <label>
-                  <input type="radio" name="multA4" value="a">
+                  <input id="q4a1" type="radio" name="q4a1" value="1">
                   a
                 </label><br>
                 <label>
-                  <input type="radio" name="multA4" value="b">
+                  <input type="radio" name="q4a2" value="1">
                   b
                 </label><br>
                 <label>
-                  <input type="radio" name="multA4" value="c">
+                  <input type="radio" name="q4a3" value="1">
                   c
                 </label><br>
                 <label>
-                  <input type="radio" name="multA4" value="d">
+                  <input type="radio" name="q4a4" value="1">
                   d
                 </label><br>
+                <button class="btn" type="button" name="button">Next</button>
               </div>
               <div id="multQ5">
                 <h3>Question 5</h3>
                 <label>
-                  <input type="radio" name="multA5" value="a">
+                  <input id="q5a1" type="radio" name="q5a1" value="1">
                   a
                 </label><br>
                 <label>
-                  <input type="radio" name="multA5" value="b">
+                  <input type="radio" name="q5a2" value="1">
                   b
                 </label><br>
                 <label>
-                  <input type="radio" name="multA5" value="c">
+                  <input type="radio" name="q5a3" value="1">
                   c
                 </label><br>
                 <label>
-                  <input type="radio" name="multA5" value="d">
+                  <input type="radio" name="q4a4" value="1">
                   d
                 </label><br>
+                <button class="btn" type="submit" name="button">Submit</button>
               </div>
             </form>
           </div>
           <div class="elim">
             <form id="elimQuiz">
-
+              <div class="elimQ1">
+                <h3>Question 1</h3>
+                <p>text</p>
+                <button class="btn" type="button" name="button">answer A</button>
+                <button class="btn" type="button" name="button">answer B</button>
+              </div>
+              <div class="elimQ2A">
+                <h3>Question 2</h3>
+                <p>text</p>
+                <button class="btn" type="button" name="button">answer A</button>
+                <button class="btn" type="button" name="button">answer B</button>
+              </div>
+              <div class="elimQ2B">
+                <h3>Question 2</h3>
+                <p>text</p>
+                <button class="btn" type="button" name="button">answer A</button>
+                <button class="btn" type="button" name="button">answer B</button>
+              </div>
             </form>
           </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-1">
 
         </div>
       </div>

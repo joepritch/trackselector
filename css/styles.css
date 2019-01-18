@@ -1,8 +1,26 @@
 .header {
-  height: 75px;
+  height: 95px;
   padding: 10px;
 }
 button {
   background-color: rgb(0, 179, 180);
   color: white;
+}
+.header img  {
+  margin-left: 5%;
+}
+/* .mainContent  {
+  display: none;
+} */
+.namePopup  {
+  text-align: center;
+}
+#nameButton  {
+  margin-top: 15px;
+}
+/* .mult  {
+  display: none;
+} */
+.elim  {
+  display: none;
 }
