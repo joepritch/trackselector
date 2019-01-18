@@ -24,6 +24,60 @@ $(document).ready(function()  {
   // $("#showElim").click(function(event)  {
   //   $(".elim").show();
   // });
+
+  $("#showMult").click(function(event) {
+      $(".mainContent").slideToggle();
+      $("#multQ1").slideToggle();
+  });
+
+  $("#b1").click(function(event) {
+      $("#multQ1").slideToggle();
+      $("#multQ2").slideToggle();
+  });
+
+  $("#b2").click(function(event) {
+      $("#multQ2").slideToggle();
+      $("#multQ3").slideToggle();
+  });
+
+  $("#b3").click(function(event) {
+      $("#multQ3").slideToggle();
+      $("#multQ4").slideToggle();
+  });
+
+  $("#b4").click(function(event) {
+      $("#multQ4").slideToggle();
+      $("#multQ5").slideToggle();
+  });
+
+  $("#b5").click(function(event) {
+      $("#multQ5").slideToggle();
+  });
+
+  $("#tba1").click(function(event) {
+      $(".tieBreakerQuestion").slideToggle();
+      $(".aLang").slideToggle();
+      $(".tba").hide();
+  });
+
+  $("#tba2").click(function(event) {
+      $(".tieBreakerQuestion").slideToggle();
+      $(".bLang").slideToggle();
+      $(".tba").hide();
+  });
+
+  $("#tba3").click(function(event) {
+      $(".tieBreakerQuestion").slideToggle();
+      $(".cLang").slideToggle();
+      $(".tba").hide();
+  });
+
+  $("#tba4").click(function(event) {
+      $(".tieBreakerQuestion").slideToggle();
+      $(".dLang").slideToggle();
+      $(".tba").hide();
+  });
+
   $("#multQuiz").submit(function(event) {
     event.preventDefault();
     var q1a1 = parseInt($("input:radio[id=q1a1]:checked").val());
@@ -163,36 +217,36 @@ function calcTotals(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) 
 
 function tallyResults(a1, a2, a3, a4) {
   if (a1 > a2 && a3 && a4)  {
-    $(".aLang").show();
+    $(".aLang").slideToggle();
   } else if (a2 > a1 && a3 && a4) {
-    $(".bLang").show();
+    $(".bLang").slideToggle();
   } else if (a3 > a1 && a2 && a4) {
-    $(".cLang").show();
+    $(".cLang").slideToggle();
   } else if (a4 > a1 && a2 && a3) {
-    $(".dLang").show();
+    $(".dLang").slideToggle();
   } else tieBreaker(a1, a2, a3, a4)
 }
 
 function tieBreaker(a1, a2, a3, a4){
-  $(".tieBreakerQuestion").show();
+  $(".tieBreakerQuestion").slideToggle();
   if (a1 === a2) {
-    $("#tba1").show();
-    $("#tba2").show();
+    $("#tba1").slideToggle();
+    $("#tba2").slideToggle();
   } else if (a1 === a3) {
-    $("#tba1").show();
-    $("#tba3").show();
+    $("#tba1").slideToggle();
+    $("#tba3").slideToggle();
   } else if (a1 === a4) {
-    $("tba1").show();
-    $("tba4").show();
+    $("tba1").slideToggle();
+    $("tba4").slideToggle();
   } else if (a2 === a3) {
-    $("#tba2").show();
-    $("#tba3").show();
+    $("#tba2").slideToggle();
+    $("#tba3").slideToggle();
   } else if (a2 === a4) {
-    $("#tba2").show();
-    $("tba4").show();
+    $("#tba2").slideToggle();
+    $("tba4").slideToggle();
   } else if (a3 === a4) {
-    $("#tba3").show();
-    $("tba4").show();
+    $("#tba3").slideToggle();
+    $("tba4").slideToggle();
   } else {
     alert("the code didn't work!")
   }

@@ -11,6 +11,9 @@
     <div class="header">
       <img src="img/epiclogo.png" alt="" height=100%>
     </div>
+    <!-- <div class="stockimage">
+      <img src="img/stock.jpg" width="100%" alt="">
+    </div> -->
     <!-- <div class="row">
       <div class="col-md-4">
 
@@ -38,9 +41,9 @@
         <div class="col-md-10">
           <div class="mainContent">
             <h3>Find out which track is right for you</h3>
-            <p><span class="userName"></span>Curious which language is the best for for you? Try one of these and find out. Keep in mind that blah blah growth mindset.</p>
-            <button id="showMult" class="btn" type="button" name="button">Multiple Choice</button>
-            <button id="showElim" class="btn" type="button" name="button">Branching Elimination</button>
+            <p>Curious which track is the best fit for for you? Try our track selector and find out.</p>
+            <p id="subText"><em>Keep in mind, our best advice is to not think of Epicodus as a place to learn a specific language or tool. Instead, think of it as a place to learn how to learn.</em></p>
+            <button id="showMult" class="btn" type="button" name="button">Take the Quiz</button>
           </div>
           <div class="mult">
             <form id="multQuiz">
@@ -62,7 +65,7 @@
                   <input id="q1a4" type="radio" name="q1" value="1">
                   d
                 </label><br>
-                <button class="btn" type="button" name="button">Next</button>
+                <button id="b1" class="btn" type="button" name="button">Next</button>
               </div>
               <div id="multQ2">
                 <h3>Question 2</h3>
@@ -82,7 +85,7 @@
                   <input id="q2a4" type="radio" name="q2" value="1">
                   d
                 </label><br>
-                <button class="btn" type="button" name="button">Next</button>
+                <button id="b2" class="btn" type="button" name="button">Next</button>
               </div>
               <div id="multQ3">
                 <h3>Question 3</h3>
@@ -102,7 +105,7 @@
                   <input id="q3a4" type="radio" name="q3" value="1">
                   d
                 </label><br>
-                <button class="btn" type="button" name="button">Next</button>
+                <button id="b3" class="btn" type="button" name="button">Next</button>
               </div>
               <div id="multQ4">
                 <h3>Question 4</h3>
@@ -122,7 +125,7 @@
                   <input id="q4a4" type="radio" name="q4" value="1">
                   d
                 </label><br>
-                <button class="btn" type="button" name="button">Next</button>
+                <button id="b4" class="btn" type="button" name="button">Next</button>
               </div>
               <div id="multQ5">
                 <h3>Question 5</h3>
@@ -142,11 +145,11 @@
                   <input id="q5a4" type="radio" name="q5" value="1">
                   d
                 </label><br>
-                <button class="btn" type="submit" name="button">Submit</button>
+                <button id="b5" class="btn" type="submit" name="button">Submit</button>
               </div>
             </form>
           </div>
-          <div class="elim">
+          <!-- <div class="elim">
             <form id="elimQuiz">
               <div class="elimQ1">
                 <h3>Question 1</h3>
@@ -167,16 +170,18 @@
                 <button class="btn" type="button" name="button">answer B</button>
               </div>
             </form>
-          </div>
+          </div> -->
           <div class="tieBreakerQuestion">
             <h3>Which of these sounds best?</h3>
           </div>
-          <button id="tba1" class="btn" type="button" name="button">a</button>
-          <button id="tba2" class="btn" type="button" name="button">b</button>
-          <button id="tba3" class="btn" type="button" name="button">c</button>
-          <button id="tba4" class="btn" type="button" name="button">d</button>
+          <div class="tba">
+            <button id="tba1" class="btn" type="button" name="button">a</button>
+            <button id="tba2" class="btn" type="button" name="button">b</button>
+            <button id="tba3" class="btn" type="button" name="button">c</button>
+            <button id="tba4" class="btn" type="button" name="button">d</button>
+          </div>
           <div class="aLang">
-            <p>test text</p>
+            <p>test text a</p>
           </div>
           <div class="bLang">
             <p>text text b</p>
