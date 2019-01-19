@@ -216,13 +216,13 @@ function calcTotals(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) 
 }
 
 function tallyResults(a1, a2, a3, a4) {
-  if (a1 > a2 && a3 && a4)  {
+  if (a1 > a2 && a1 > a3 && a1 > a4)  {
     $(".aLang").slideToggle();
-  } else if (a2 > a1 && a3 && a4) {
+  } else if (a2 > a1 && a2 > a3 && a2 > a4) {
     $(".bLang").slideToggle();
-  } else if (a3 > a1 && a2 && a4) {
+  } else if (a3 > a1 && a3 > a2 && a3 > a4) {
     $(".cLang").slideToggle();
-  } else if (a4 > a1 && a2 && a3) {
+  } else if (a4 > a1 && a4 > a2 && a4 > a3) {
     $(".dLang").slideToggle();
   } else tieBreaker(a1, a2, a3, a4)
 }
@@ -243,10 +243,10 @@ function tieBreaker(a1, a2, a3, a4){
     $("#tba3").slideToggle();
   } else if (a2 === a4) {
     $("#tba2").slideToggle();
-    $("tba4").slideToggle();
+    $("#tba4").slideToggle();
   } else if (a3 === a4) {
     $("#tba3").slideToggle();
-    $("tba4").slideToggle();
+    $("#tba4").slideToggle();
   } else {
     alert("the code didn't work!")
   }
