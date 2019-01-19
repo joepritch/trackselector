@@ -19,7 +19,7 @@ If I come back to this project, I had planned a secondary track selector using r
 
 ## Known Bugs
 
-_None as of now, though I made many errors. They all seem to be fixed though._
+_Not choosing any answers and then submitting takes you to the bonus question since all groups are tied, I didn't plan for this and the code reflects that because it only shows the first two tiebreaker buttons. ("a1 === a2" so it doesn't check if the others are equal as well)._
 
 ## Support and contact details
 
