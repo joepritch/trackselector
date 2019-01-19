@@ -1,30 +1,4 @@
-// var userName = $("input#inputName").val();
-//
-// function showcontent(name) {
-//   $(".mainContent").show();
-//   $(".userName").text("");
-// }
-
-// var mA1 = $("input:radio[name=multA1]:checked").val());
-// var mA2 = $("input:radio[name=multA2]:checked").val());
-// var mA3 = $("input:radio[name=multA3]:checked").val());
-// var mA4 = $("input:radio[name=multA4]:checked").val());
-// var mA5 = $("input:radio[name=multA5]:checked").val());
-// var mResult = mA1 + mA2 + mA3 + mA4 + mA5;
-
 $(document).ready(function()  {
-  // $("#getUserName").submit(function(event) {
-  //   event.preventDefault();
-  //   showcontent(userName);
-  // });
-
-  // $("#showMult").click(function(event)  {
-  //   $(".mult").show();
-  // });
-  // $("#showElim").click(function(event)  {
-  //   $(".elim").show();
-  // });
-
   $("#showMult").click(function(event) {
       $(".mainContent").slideToggle();
       $("#multQ1").slideToggle();
@@ -56,25 +30,25 @@ $(document).ready(function()  {
 
   $("#tba1").click(function(event) {
       $(".tieBreakerQuestion").slideToggle();
-      $(".aLang").slideToggle();
+      $(".aTrack").slideToggle();
       $(".tba").hide();
   });
 
   $("#tba2").click(function(event) {
       $(".tieBreakerQuestion").slideToggle();
-      $(".bLang").slideToggle();
+      $(".bTrack").slideToggle();
       $(".tba").hide();
   });
 
   $("#tba3").click(function(event) {
       $(".tieBreakerQuestion").slideToggle();
-      $(".cLang").slideToggle();
+      $(".cTrack").slideToggle();
       $(".tba").hide();
   });
 
   $("#tba4").click(function(event) {
       $(".tieBreakerQuestion").slideToggle();
-      $(".dLang").slideToggle();
+      $(".dTrack").slideToggle();
       $(".tba").hide();
   });
 
@@ -217,13 +191,13 @@ function calcTotals(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t) 
 
 function tallyResults(a1, a2, a3, a4) {
   if (a1 > a2 && a1 > a3 && a1 > a4)  {
-    $(".aLang").slideToggle();
+    $(".aTrack").slideToggle();
   } else if (a2 > a1 && a2 > a3 && a2 > a4) {
-    $(".bLang").slideToggle();
+    $(".bTrack").slideToggle();
   } else if (a3 > a1 && a3 > a2 && a3 > a4) {
-    $(".cLang").slideToggle();
+    $(".cTrack").slideToggle();
   } else if (a4 > a1 && a4 > a2 && a4 > a3) {
-    $(".dLang").slideToggle();
+    $(".dTrack").slideToggle();
   } else tieBreaker(a1, a2, a3, a4)
 }
 
